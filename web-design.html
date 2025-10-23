@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Simple Search Bar Example</title>
+  </head>
+  <body>
+  <form action="/search" method="GET">
+  <input type="text" name="query" placeholder="Search...">
+  <button type="submit">Search</button>
+  </form>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный магазин</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#d5f2ff; margin:0; }
+    header { background:#F3A851; color:#F9CF9E; padding:20px; text-align:center; }
+    nav { background:#9E611A; display:flex; justify-content:center; padding:10px 0; }
+    nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:700; }
+    nav a:hover { text-decoration:underline; }
+    .catalog { padding:30px; text-align:center; }
+    .book-grid {
+      display:flex; flex-wrap:wrap; justify-content:center;
+      gap:25px; margin-top:20px;
+    }
+    .book {
+      background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);
+      width:220px; padding:15px; text-align:center; transition:transform .18s;
+    }
+    .book:hover { transform:scale(1.05); }
+    .book img { width:100%; height:310px; object-fit:cover; border-radius:5px; }
+    .book h3 { font-size:18px; margin:10px 0 6px; }
+    .book p { color:#3C6173; margin:0; font-size:14px; }
+    footer { background:#F3A851; color:#fff; text-align:center; padding:15px; margin-top:30px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <style>
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #F3A851;
+      padding: 10px 20px;
+       }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-family: Arial, sans-serif;
+      color: #3C6173;
+    }
+  </style>
+    <img src="https://i.pinimg.com/originals/a3/6b/31/a36b31c36e3cdae1964272110d31a4e2.png" alt="Книжная библиотека"> 
+    <h1>Книжная библиотека</h1>
+  </header>
+
+  <nav>
+    <a href="web-design.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О нас</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+
+  <section class="catalog">
+    <h2>Все книги</h2>
+
+    <div class="book-grid">
+      <div class="book">
+        <img src="https://avatars.mds.yandex.net/i?id=4ec0356a4b9f5094dd174b507e7080fb_l-5347559-images-thumbs&n=13" alt="Мастер и Маргарита">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760274468&tld=kz&lang=ru&name=Master-i-Margarita.pdf&text=мастер%20и%20маргарита%20pdf&url=https%3A%2F%2Fwww.bulgakov.ru%2Fpdf%2FMaster-i-Margarita.pdf&lr=29592&mime=pdf&l10n=ru&sign=ccf2422e54f703eb9cbedd63e99c376e&keyno=0&nosw=1&serpParams=tm%3D1760274468%26tld%3Dkz%26lang%3Dru%26name%3DMaster-i-Margarita.pdf%26text%3D%25D0%25BC%25D0%25B0%25D1%2581%25D1%2582%25D0%25B5%25D1%2580%2B%25D0%25B8%2B%25D0%25BC%25D0%25B0%25D1%2580%25D0%25B3%25D0%25B0%25D1%2580%25D0%25B8%25D1%2582%25D0%25B0%2Bpdf%26url%3Dhttps%253A%2F%2Fwww.bulgakov.ru%2Fpdf%2FMaster-i-Margarita.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Dccf2422e54f703eb9cbedd63e99c376e%26keyno%3D0%26nosw%3D1">Мастер и Маргарита</a>
+        <p>Михаил Булгаков</p>
+      </div>
+
+      <div class="book">
+        <img src="https://simg2.marwin.kz/media/catalog/product/c/o/cover1_70_99.jpg" alt="Преступление и наказание">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760367198&tld=kz&lang=ru&name=Ф.%20Достоевский%20%20Преступление%20и%20наказание.pdf&text=Преступление%20и%20наказание%20pdf&url=https%3A%2F%2Folehnik.ru%2Ffiles%2Fliteratura%2F%25D0%25A4.%2520%25D0%2594%25D0%25BE%25D1%2581%25D1%2582%25D0%25BE%25D0%25B5%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%2520%25D0%259F%25D1%2580%25D0%25B5%25D1%2581%25D1%2582%25D1%2583%25D0%25BF%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B5%2520%25D0%25B8%2520%25D0%25BD%25D0%25B0%25D0%25BA%25D0%25B0%25D0%25B7%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5.pdf&lr=29592&mime=pdf&l10n=ru&sign=cc829fc50f28f174d2a842e427da1574&keyno=0&nosw=1&serpParams=tm%3D1760367198%26tld%3Dkz%26lang%3Dru%26name%3D%25D0%25A4.%2520%25D0%2594%25D0%25BE%25D1%2581%25D1%2582%25D0%25BE%25D0%25B5%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%2520%25D0%259F%25D1%2580%25D0%25B5%25D1%2581%25D1%2582%25D1%2583%25D0%25BF%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B5%2520%25D0%25B8%2520%25D0%25BD%25D0%25B0%25D0%25BA%25D0%25B0%25D0%25B7%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5.pdf%26text%3D%25D0%259F%25D1%2580%25D0%25B5%25D1%2581%25D1%2582%25D1%2583%25D0%25BF%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B5%2B%25D0%25B8%2B%25D0%25BD%25D0%25B0%25D0%25BA%25D0%25B0%25D0%25B7%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5%2Bpdf%26url%3Dhttps%253A%2F%2Folehnik.ru%2Ffiles%2Fliteratura%2F%2525D0%2525A4.%252520%2525D0%252594%2525D0%2525BE%2525D1%252581%2525D1%252582%2525D0%2525BE%2525D0%2525B5%2525D0%2525B2%2525D1%252581%2525D0%2525BA%2525D0%2525B8%2525D0%2525B9%252520%252520%2525D0%25259F%2525D1%252580%2525D0%2525B5%2525D1%252581%2525D1%252582%2525D1%252583%2525D0%2525BF%2525D0%2525BB%2525D0%2525B5%2525D0%2525BD%2525D0%2525B8%2525D0%2525B5%252520%2525D0%2525B8%252520%2525D0%2525BD%2525D0%2525B0%2525D0%2525BA%2525D0%2525B0%2525D0%2525B7%2525D0%2525B0%2525D0%2525BD%2525D0%2525B8%2525D0%2525B5.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Dcc829fc50f28f174d2a842e427da1574%26keyno%3D0%26nosw%3D1">Преступление и наказание</a>
+        <p>Фёдор Достоевский</p>
+      </div>
+
+      <div class="book">
+        <img src="https://avatars.mds.yandex.net/i?id=4cd517af1ca55819fbd3d273369896c7_l-15558911-images-thumbs&n=13" alt="Война и мир, 1-2 тома">
+        <a href="https://psv4.userapi.com/s/v1/d/VPN-mJ1H9UTheN7JwyRyNTg77Rfn0tTTUm-p_3jUtL7dZRkLOi73RobbOUIOFMlSdVMqsePl7PduyF1641fkRs2oqzTkq47PG_FkM405fJLb8dPc/Tolstoy_Lev_Voyna_i_mir_1-2.pdf">Война и мир, 1-2 тома</a>
+        <p>Лев Толстой</p>
+      </div>
+
+      <div class="book">
+        <img src="https://avatars.mds.yandex.net/get-mpic/5234870/img_id1028903089441543189.jpeg/orig" alt="Отцы и дети">
+        <a href="https://psv4.userapi.com/s/v1/d/I97zxih9LZMcQ_tq-Nk1UsqHHXEzMbpNu50f_goaWL9pWvufVaN0bPACBpoyVA_GdOyp3BDailGYqXFr7yYa4B8UBn5hkrzNQzK-v6puESjunFeh/Turgenev__Ottsy_i_deti.pdf">Отцы и дети</a>
+        <p>Иван Тургенев</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/03/c4/01907d92-584f-70cb-8b47-19a964ea03c4.jpg" alt="Анна Каренина">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760367422&tld=kz&lang=ru&name=Tolstoy_Anna_Karenina.pdf&text=Анна%20Каренина%20pdf&url=https%3A%2F%2Fwww.100bestbooks.ru%2Ffiles%2FTolstoy_Anna_Karenina.pdf&lr=29592&mime=pdf&l10n=ru&sign=7c957ed2b00d64c5db752108dc72d228&keyno=0&nosw=1&serpParams=tm%3D1760367422%26tld%3Dkz%26lang%3Dru%26name%3DTolstoy_Anna_Karenina.pdf%26text%3D%25D0%2590%25D0%25BD%25D0%25BD%25D0%25B0%2B%25D0%259A%25D0%25B0%25D1%2580%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25BD%25D0%25B0%2Bpdf%26url%3Dhttps%253A%2F%2Fwww.100bestbooks.ru%2Ffiles%2FTolstoy_Anna_Karenina.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D7c957ed2b00d64c5db752108dc72d228%26keyno%3D0%26nosw%3D1">Анна Каренина</a>
+        <p>Лев Толстой</p>
+      </div>
+
+      <div class="book">
+        <img src="https://avatars.mds.yandex.net/i?id=7e2d32d64e58cbdf1c2c8a71d8bd2558-4593300-images-thumbs&n=13" alt="Евгений Онегин">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760367447&tld=kz&lang=ru&name=А.С._Пушкин_Евгений_Онегин.pdf&text=Евгений%20Онегин%20pdf&url=https%3A%2F%2Feir.dvinaland.ru%2Fmedia%2Fvalues%2F%25D0%2590.%25D0%25A1._%25D0%259F%25D1%2583%25D1%2588%25D0%25BA%25D0%25B8%25D0%25BD_%25D0%2595%25D0%25B2%25D0%25B3%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B9_%25D0%259E%25D0%25BD%25D0%25B5%25D0%25B3%25D0%25B8%25D0%25BD.pdf&lr=29592&mime=pdf&l10n=ru&sign=7ebf0214bcec76a01896b8bce398e7bc&keyno=0&nosw=1&serpParams=tm%3D1760367447%26tld%3Dkz%26lang%3Dru%26name%3D%25D0%2590.%25D0%25A1._%25D0%259F%25D1%2583%25D1%2588%25D0%25BA%25D0%25B8%25D0%25BD_%25D0%2595%25D0%25B2%25D0%25B3%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B9_%25D0%259E%25D0%25BD%25D0%25B5%25D0%25B3%25D0%25B8%25D0%25BD.pdf%26text%3D%25D0%2595%25D0%25B2%25D0%25B3%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B9%2B%25D0%259E%25D0%25BD%25D0%25B5%25D0%25B3%25D0%25B8%25D0%25BD%2Bpdf%26url%3Dhttps%253A%2F%2Feir.dvinaland.ru%2Fmedia%2Fvalues%2F%2525D0%252590.%2525D0%2525A1._%2525D0%25259F%2525D1%252583%2525D1%252588%2525D0%2525BA%2525D0%2525B8%2525D0%2525BD_%2525D0%252595%2525D0%2525B2%2525D0%2525B3%2525D0%2525B5%2525D0%2525BD%2525D0%2525B8%2525D0%2525B9_%2525D0%25259E%2525D0%2525BD%2525D0%2525B5%2525D0%2525B3%2525D0%2525B8%2525D0%2525BD.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D7ebf0214bcec76a01896b8bce398e7bc%26keyno%3D0%26nosw%3D1">Евгений Онегин</a>
+        <p>Александр Пушкин</p>
+      </div>
+
+      <div class="book">
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/10287054/pub_64f49bcbbe84d973e4e4b517_64f49e81e0237b23179191bd/scale_1200" alt="Четвёртое крыло, 1 часть">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760367525&tld=kz&lang=ru&name=Yarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf&text=Четвёртое%20крыло%20pdf&url=https%3A%2F%2Ffkingdom.org%2Fwp-content%2Fuploads%2F2024%2F01%2FYarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf&lr=29592&mime=pdf&l10n=ru&sign=aae1310b67ce5d6dfd4b1de89ad5a053&keyno=0&nosw=1&serpParams=tm%3D1760367525%26tld%3Dkz%26lang%3Dru%26name%3DYarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf%26text%3D%25D0%25A7%25D0%25B5%25D1%2582%25D0%25B2%25D1%2591%25D1%2580%25D1%2582%25D0%25BE%25D0%25B5%2B%25D0%25BA%25D1%2580%25D1%258B%25D0%25BB%25D0%25BE%2Bpdf%26url%3Dhttps%253A%2F%2Ffkingdom.org%2Fwp-content%2Fuploads%2F2024%2F01%2FYarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Daae1310b67ce5d6dfd4b1de89ad5a053%26keyno%3D0%26nosw%3D1">Четвёртое крыло</a>
+        <p>Ребекка Яррос</p>
+      </div>
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/ee/4b/01990957-19cb-73d6-bb1a-91948edbee4b.jpg?width=2976&height=1480&fit=bounds" alt="Рассвет Жатвы">
+        <a href="https://psv4.userapi.com/s/v1/d/GM71yeCBMTIoa4lJrKsKgcddTsIjSANaUKb4LnxnQk9XvEHSPk8G1lizZWwhCvQACSeFU5sYX1EeR5LltL5ZPWJS41JW97YOYQQdDYJ1oMBJc4Ny/Rassvet_Zhatvy_-_Syuzen_Kollinz.pdf">Рассвет Жатвы</a>
+        <p>Сьюзен Коллинз</p>
+      </div>
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/3e/a6/019859fa-28ec-72c5-941e-716446333ea6.jpg?width=2976&height=1480&fit=bounds" alt="Если все кошки в мире исчезнут">
+        <a href="https://fb2-epub.com/index.php?do=download&id=18506&subaction=download">Если все кошки в мире исчезнут</a>
+        <p>Гэнки Кавамура</p>
+      </div>
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/57/5b/018fa205-428e-7c03-934f-c95c0275575b.jpg?width=2976&height=1480&fit=bounds" alt="Грозовой перевал">
+        <a href="https://psv4.userapi.com/s/v1/d/wzrQH0XZ0d2JZlS_90glEMEGNmXNAGtV8THD22FV3BwY-AwuTM_842NAdm625LgPy_xHD2EPngctZdzBnNrrqrCCcK3auU4xaoJDmo_zWLrHB7QJ/Grozovoy_pereval.pdf">Грозовой перевал</a>
+        <p>Эмили Джейн Бронте</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://ir-8.ozone.ru/s3/multimedia-1-f/wc1000/7082501883.jpg" alt="Дилогия Ведьма">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760368714&tld=kz&lang=ru&name=96006849.a4.pdf&text=Восхитительная%20Ведьма%20pdf&url=https%3A%2F%2Fladybook.org%2Fwp-content%2Fuploads%2F2023%2F11%2F96006849.a4.pdf&lr=29592&mime=pdf&l10n=ru&sign=123ef9a9dc16ae4d48a3b5961515aa4c&keyno=0&nosw=1&serpParams=tm%3D1760368714%26tld%3Dkz%26lang%3Dru%26name%3D96006849.a4.pdf%26text%3D%25D0%2592%25D0%25BE%25D1%2581%25D1%2585%25D0%25B8%25D1%2582%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25B0%25D1%258F%2B%25D0%2592%25D0%25B5%25D0%25B4%25D1%258C%25D0%25BC%25D0%25B0%2Bpdf%26url%3Dhttps%253A%2F%2Fladybook.org%2Fwp-content%2Fuploads%2F2023%2F11%2F96006849.a4.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D123ef9a9dc16ae4d48a3b5961515aa4c%26keyno%3D0%26nosw%3D1">Дилогия Ведьма</a>
+        <p>Анна Джейн</p>
+      </div>
+    
+    <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/dc/ef/01931e88-6701-7bf6-81c8-0efcbde6dcef.jpg?width=2976&height=1480&fit=bounds" alt="Скорбь Сатаны">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760368814&tld=kz&lang=ru&name=13442479_korelli_skorb_satany.pdf&text=Скорбь%20Сатаны%20pdf&url=https%3A%2F%2Fimg0.liveinternet.ru%2Fimages%2Fattach%2Fd%2F3%2F13442%2F13442479_korelli_skorb_satany.pdf&lr=29592&mime=pdf&l10n=ru&sign=2d83e1849f2d5979ffda209e95e3c37d&keyno=0&nosw=1&serpParams=tm%3D1760368814%26tld%3Dkz%26lang%3Dru%26name%3D13442479_korelli_skorb_satany.pdf%26text%3D%25D0%25A1%25D0%25BA%25D0%25BE%25D1%2580%25D0%25B1%25D1%258C%2B%25D0%25A1%25D0%25B0%25D1%2582%25D0%25B0%25D0%25BD%25D1%258B%2Bpdf%26url%3Dhttps%253A%2F%2Fimg0.liveinternet.ru%2Fimages%2Fattach%2Fd%2F3%2F13442%2F13442479_korelli_skorb_satany.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D2d83e1849f2d5979ffda209e95e3c37d%26keyno%3D0%26nosw%3D1">Скорбь Сатаны</a>
+        <p>Мария Корелли</p>
+      </div>
+   </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Книжный Магазин. Все права защищены.</p>
+  </footer>
+</body>
+</html>

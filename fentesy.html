@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный магазин</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#d5f2ff; margin:0; }
+    header { background:#F3A851; color:#F9CF9E; padding:20px; text-align:center; }
+    nav { background:#9E611A; display:flex; justify-content:center; padding:10px 0; }
+    nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:700; }
+    nav a:hover { text-decoration:underline; }
+    .catalog { padding:30px; text-align:center; }
+    .book-grid {
+      display:flex; flex-wrap:wrap; justify-content:center;
+      gap:25px; margin-top:20px;
+    }
+    .book {
+      background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);
+      width:220px; padding:15px; text-align:center; transition:transform .18s;
+    }
+    .book:hover { transform:scale(1.05); }
+    .book img { width:100%; height:310px; object-fit:cover; border-radius:5px; }
+    .book h3 { font-size:18px; margin:10px 0 6px; }
+    .book p { color:#3C6173; margin:0; font-size:14px; }
+    footer { background:#F3A851; color:#fff; text-align:center; padding:15px; margin-top:30px; }
+  </style>
+</head>
+
+<header>
+    <style>
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #F3A851;
+      padding: 10px 20px;
+       }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-family: Arial, sans-serif;
+      color: #3C6173;
+    }
+  </style>
+    <img src="https://i.pinimg.com/originals/a3/6b/31/a36b31c36e3cdae1964272110d31a4e2.png" alt="Книжная библиотека"> 
+    <h1>Книжная библиотека</h1>
+  </header>
+
+<body>
+
+  <nav>
+    <a href="web-design.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О нас</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+
+ <section align ="center" class="catalog">
+    <div>
+     <h2>Все Фэнтези</h2>
+
+     <div class="book-grid">
+     <div class="book">
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/10287054/pub_64f49bcbbe84d973e4e4b517_64f49e81e0237b23179191bd/scale_1200" alt="Четвёртое крыло, 1 часть">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760367525&tld=kz&lang=ru&name=Yarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf&text=Четвёртое%20крыло%20pdf&url=https%3A%2F%2Ffkingdom.org%2Fwp-content%2Fuploads%2F2024%2F01%2FYarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf&lr=29592&mime=pdf&l10n=ru&sign=aae1310b67ce5d6dfd4b1de89ad5a053&keyno=0&nosw=1&serpParams=tm%3D1760367525%26tld%3Dkz%26lang%3Dru%26name%3DYarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf%26text%3D%25D0%25A7%25D0%25B5%25D1%2582%25D0%25B2%25D1%2591%25D1%2580%25D1%2582%25D0%25BE%25D0%25B5%2B%25D0%25BA%25D1%2580%25D1%258B%25D0%25BB%25D0%25BE%2Bpdf%26url%3Dhttps%253A%2F%2Ffkingdom.org%2Fwp-content%2Fuploads%2F2024%2F01%2FYarros_Rebekka_Empirey1_Chetvertoe_kryilo.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Daae1310b67ce5d6dfd4b1de89ad5a053%26keyno%3D0%26nosw%3D1">Четвёртое крыло</a>
+        <p>Ребекка Яррос</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/ee/4b/01990957-19cb-73d6-bb1a-91948edbee4b.jpg?width=2976&height=1480&fit=bounds" alt="Рассвет Жатвы">
+        <a href="https://psv4.userapi.com/s/v1/d/GM71yeCBMTIoa4lJrKsKgcddTsIjSANaUKb4LnxnQk9XvEHSPk8G1lizZWwhCvQACSeFU5sYX1EeR5LltL5ZPWJS41JW97YOYQQdDYJ1oMBJc4Ny/Rassvet_Zhatvy_-_Syuzen_Kollinz.pdf">Рассвет Жатвы</a>
+        <p>Сьюзен Коллинз</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/93/e9/0198834f-2962-756c-a772-85af611f93e9.jpg?width=2976&height=1480&fit=bounds" alt="Охотясь на Аделин">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760369935&tld=kz&lang=en&name=1721965599_hunting-adeline-h-d-carlton-cat-and-mouse-duet-2.pdf&text=Охотясь%20на%20Аделин%20Х.%20Д.%20Карлтон%20пдф&url=https%3A%2F%2Ffb2bookfree.com%2Fuploads%2Ffiles%2F2024-07%2F1721965599_hunting-adeline-h-d-carlton-cat-and-mouse-duet-2.pdf&lr=29592&mime=pdf&l10n=ru&sign=1ad849006f1d4902f9449e7ec8774f2b&keyno=0&nosw=1&serpParams=tm%3D1760369935%26tld%3Dkz%26lang%3Den%26name%3D1721965599_hunting-adeline-h-d-carlton-cat-and-mouse-duet-2.pdf%26text%3D%25D0%259E%25D1%2585%25D0%25BE%25D1%2582%25D1%258F%25D1%2581%25D1%258C%2B%25D0%25BD%25D0%25B0%2B%25D0%2590%25D0%25B4%25D0%25B5%25D0%25BB%25D0%25B8%25D0%25BD%2B%25D0%25A5.%2B%25D0%2594.%2B%25D0%259A%25D0%25B0%25D1%2580%25D0%25BB%25D1%2582%25D0%25BE%25D0%25BD%2B%25D0%25BF%25D0%25B4%25D1%2584%26url%3Dhttps%253A%2F%2Ffb2bookfree.com%2Fuploads%2Ffiles%2F2024-07%2F1721965599_hunting-adeline-h-d-carlton-cat-and-mouse-duet-2.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D1ad849006f1d4902f9449e7ec8774f2b%26keyno%3D0%26nosw%3D1">Охотясь на Аделин</a>
+        <p>Х. Д. Карлтон</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/02/15/018fa172-e906-7c28-b4b5-32c8d9f10215.jpg?width=2976&height=1480&fit=bounds" alt="Зов Ктулху">
+        <a href="https://psv4.userapi.com/s/v1/d/-8t-tXGhAWn86dYQ-J7xnx5_kq88YB2zQccKyn6lLAj4jGZN23ZHFbFuc7yHHFTGpv7IoZSGXusBy7mqby1Nr-sKznEqVTF8PC9OvGybMcQ2e6Y_/Lavkraft_G_F_Zov_Ktulkhu.pdf">Зов Ктулху</a>
+        <p>Говард Филлипс Лавкрафт</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/7f/ff/0193ac15-cd16-7595-83d2-e3c04a437fff.jpg?width=2976&height=1480&fit=bounds" alt="Голодные игры">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760370228&tld=kz&lang=ru&name=005_GolodnieIgri1.pdf&text=Голодные%20игры%20Сьюзен%20Коллинз%20пдф&url=https%3A%2F%2Fsk-lib.3dn.ru%2Fbooks%2F005_GolodnieIgri1.pdf&lr=29592&mime=pdf&l10n=ru&sign=a561e6ea079a33ff8785bf93fe8eeeae&keyno=0&nosw=1&serpParams=tm%3D1760370228%26tld%3Dkz%26lang%3Dru%26name%3D005_GolodnieIgri1.pdf%26text%3D%25D0%2593%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B4%25D0%25BD%25D1%258B%25D0%25B5%2B%25D0%25B8%25D0%25B3%25D1%2580%25D1%258B%2B%25D0%25A1%25D1%258C%25D1%258E%25D0%25B7%25D0%25B5%25D0%25BD%2B%25D0%259A%25D0%25BE%25D0%25BB%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B7%2B%25D0%25BF%25D0%25B4%25D1%2584%26url%3Dhttps%253A%2F%2Fsk-lib.3dn.ru%2Fbooks%2F005_GolodnieIgri1.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Da561e6ea079a33ff8785bf93fe8eeeae%26keyno%3D0%26nosw%3D1">Голодные игры</a>
+        <p>Сьюзен Коллинз</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/cc/ac/0199ce4f-424c-7d7c-854c-ba81beb5ccac.jpg?width=2976&height=1480&fit=bounds" alt="Сумерки">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760370721&tld=kz&lang=ru&name=sumerki-stefani-mayer.pdf&text=Сумерки%20Стефани%20Майер%20пдф&url=https%3A%2F%2Ffantasy-kniga.com%2Fwp-content%2Fuploads%2F2024%2F01%2Fsumerki-stefani-mayer.pdf&lr=29592&mime=pdf&l10n=ru&sign=8a503f454e5f4c012e3c770e9162c853&keyno=0&nosw=1&serpParams=tm%3D1760370721%26tld%3Dkz%26lang%3Dru%26name%3Dsumerki-stefani-mayer.pdf%26text%3D%25D0%25A1%25D1%2583%25D0%25BC%25D0%25B5%25D1%2580%25D0%25BA%25D0%25B8%2B%25D0%25A1%25D1%2582%25D0%25B5%25D1%2584%25D0%25B0%25D0%25BD%25D0%25B8%2B%25D0%259C%25D0%25B0%25D0%25B9%25D0%25B5%25D1%2580%2B%25D0%25BF%25D0%25B4%25D1%2584%26url%3Dhttps%253A%2F%2Ffantasy-kniga.com%2Fwp-content%2Fuploads%2F2024%2F01%2Fsumerki-stefani-mayer.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D8a503f454e5f4c012e3c770e9162c853%26keyno%3D0%26nosw%3D1">Сумерки</a>
+        <p>Стефани Майер</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/50/1e/01981c53-5f7c-7804-9c10-d424b791501e.jpg?width=2976&height=1480&fit=bounds" alt="Дракула">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760370851&tld=kz&lang=ru&name=Stoker_B_Drakula.a6_.pdf&text=Дракула%20Брэм%20Стокер%20пдф&url=https%3A%2F%2Fmsrabota.ru%2Fcontent%2Fbook_docs%2FStoker_B_Drakula.a6_.pdf&lr=29592&mime=pdf&l10n=ru&sign=c40b66c764162f8ce35a99e4c96cc179&keyno=0&nosw=1&serpParams=tm%3D1760370851%26tld%3Dkz%26lang%3Dru%26name%3DStoker_B_Drakula.a6_.pdf%26text%3D%25D0%2594%25D1%2580%25D0%25B0%25D0%25BA%25D1%2583%25D0%25BB%25D0%25B0%2B%25D0%2591%25D1%2580%25D1%258D%25D0%25BC%2B%25D0%25A1%25D1%2582%25D0%25BE%25D0%25BA%25D0%25B5%25D1%2580%2B%25D0%25BF%25D0%25B4%25D1%2584%26url%3Dhttps%253A%2F%2Fmsrabota.ru%2Fcontent%2Fbook_docs%2FStoker_B_Drakula.a6_.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Dc40b66c764162f8ce35a99e4c96cc179%26keyno%3D0%26nosw%3D1">Дракула</a>
+        <p>Брэм Стокер</p>
+      </div>
+
+      <div class="book">
+        <img src="https://goods-photos.static1-sima-land.com/items/6628596/0/1600.jpg?v=1646841782" alt="Благословение небожителей">
+        <a href="https://psv4.userapi.com/s/v1/d/VXiFkWtEA0agFtVgiR-unwlq01L72sELTX7Gy5J8MKGEdi4Lp8PiHjLoLtByYJLtqz_QsldJwk0M2S_yrsPtToQhFRBZtDuFt8BZk1EFxg2JcNvO/Heaven_Official_s_Blessing_Tian_Guan_Ci_Fu_Vol_1_by_Mo_Xiang_Tong_Xiu_z-lib_org.epub">Благословение небожителей</a>
+        <p>Мосян Тунсю</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/d4/6f/01901a2f-b6be-735e-94c7-d12dc546d46f.jpg?width=2976&height=1480&fit=bounds" alt="Вавилон. Сокрытая история">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760371145&tld=kz&lang=ru&name=102956062.a4.pdf&text=Вавилон.%20Сокрытая%20история%20Ребекка%20Куанг%20pdf&url=https%3A%2F%2Ffkingdom.org%2Fwp-content%2Fuploads%2F2024%2F01%2F102956062.a4.pdf&lr=29592&mime=pdf&l10n=ru&sign=484e843e359cc2576656b5f4f23acc81&keyno=0&nosw=1&serpParams=tm%3D1760371145%26tld%3Dkz%26lang%3Dru%26name%3D102956062.a4.pdf%26text%3D%25D0%2592%25D0%25B0%25D0%25B2%25D0%25B8%25D0%25BB%25D0%25BE%25D0%25BD.%2B%25D0%25A1%25D0%25BE%25D0%25BA%25D1%2580%25D1%258B%25D1%2582%25D0%25B0%25D1%258F%2B%25D0%25B8%25D1%2581%25D1%2582%25D0%25BE%25D1%2580%25D0%25B8%25D1%258F%2B%25D0%25A0%25D0%25B5%25D0%25B1%25D0%25B5%25D0%25BA%25D0%25BA%25D0%25B0%2B%25D0%259A%25D1%2583%25D0%25B0%25D0%25BD%25D0%25B3%2Bpdf%26url%3Dhttps%253A%2F%2Ffkingdom.org%2Fwp-content%2Fuploads%2F2024%2F01%2F102956062.a4.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D484e843e359cc2576656b5f4f23acc81%26keyno%3D0%26nosw%3D1">Вавилон. Сокрытая история</a>
+        <p>Ребекка Куанг</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/78/09/0190e2d6-b4a6-7afd-a245-a9a07a8b7809.jpg?width=2976&height=1480&fit=bounds" alt="Хоббит">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760371391&tld=kz&lang=ru&name=Tolkin_Hobbit_ili_Tuda_i_Obratno.pdf&text=Хоббит%20Джон%20Рональд%20Руэл%20Толкин%20pdf&url=https%3A%2F%2Fogurcova-portal.com%2Fwp-content%2Fuploads%2F2013%2F01%2FTolkin_Hobbit_ili_Tuda_i_Obratno.pdf&lr=29592&mime=pdf&l10n=ru&sign=f8762f26ef05fc76c7aaa48e04ad6f58&keyno=0&nosw=1&serpParams=tm%3D1760371391%26tld%3Dkz%26lang%3Dru%26name%3DTolkin_Hobbit_ili_Tuda_i_Obratno.pdf%26text%3D%25D0%25A5%25D0%25BE%25D0%25B1%25D0%25B1%25D0%25B8%25D1%2582%2B%25D0%2594%25D0%25B6%25D0%25BE%25D0%25BD%2B%25D0%25A0%25D0%25BE%25D0%25BD%25D0%25B0%25D0%25BB%25D1%258C%25D0%25B4%2B%25D0%25A0%25D1%2583%25D1%258D%25D0%25BB%2B%25D0%25A2%25D0%25BE%25D0%25BB%25D0%25BA%25D0%25B8%25D0%25BD%2Bpdf%26url%3Dhttps%253A%2F%2Fogurcova-portal.com%2Fwp-content%2Fuploads%2F2013%2F01%2FTolkin_Hobbit_ili_Tuda_i_Obratno.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Df8762f26ef05fc76c7aaa48e04ad6f58%26keyno%3D0%26nosw%3D1">Хоббит</a>
+        <p>Джон Рональд Руэл Толкин</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Книжный Магазин. Все права защищены.</p>
+  </footer>
+</body>
+</html>

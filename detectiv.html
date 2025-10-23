@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный магазин</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#d5f2ff; margin:0; }
+    header { background:#F3A851; color:#F9CF9E; padding:20px; text-align:center; }
+    nav { background:#9E611A; display:flex; justify-content:center; padding:10px 0; }
+    nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:700; }
+    nav a:hover { text-decoration:underline; }
+    .catalog { padding:30px; text-align:center; }
+    .book-grid {
+      display:flex; flex-wrap:wrap; justify-content:center;
+      gap:25px; margin-top:20px;
+    }
+    .book {
+      background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15);
+      width:220px; padding:15px; text-align:center; transition:transform .18s;
+    }
+    .book:hover { transform:scale(1.05); }
+    .book img { width:100%; height:310px; object-fit:cover; border-radius:5px; }
+    .book h3 { font-size:18px; margin:10px 0 6px; }
+    .book p { color:#3C6173; margin:0; font-size:14px; }
+    footer { background:#F3A851; color:#fff; text-align:center; padding:15px; margin-top:30px; }
+  </style>
+</head>
+
+<header>
+    <style>
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #F3A851;
+      padding: 10px 20px;
+       }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-family: Arial, sans-serif;
+      color: #3C6173;
+    }
+  </style>
+    <img src="https://i.pinimg.com/originals/a3/6b/31/a36b31c36e3cdae1964272110d31a4e2.png" alt="Книжная библиотека"> 
+    <h1>Книжная библиотека</h1>
+  </header>
+
+<body>
+
+  <nav>
+    <a href="web-design.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О нас</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+
+  <section align ="center" class="catalog">
+    <div>
+     <h2>Все Детективы</h2>
+
+     <div class="book-grid">
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/2d/4c/0194017c-5686-7b2d-b548-f37ecd452d4c.jpg?width=2976&height=1480&fit=bounds" alt="Убийства по алфавиту">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760275753&tld=kz&lang=ru&name=ubiistva_po_alfavitu_-_aghata_kristi.pdf&text=убийство%20по%20алфавиту%20книга%20пдф&url=https%3A%2F%2Fminizo.kchgov.ru%2Fuploads%2Fubiistva_po_alfavitu_-_aghata_kristi.pdf&lr=29592&mime=pdf&l10n=ru&sign=b6bad417d75d18e85b9a381d734ee3ca&keyno=0&nosw=1&serpParams=tm%3D1760275753%26tld%3Dkz%26lang%3Dru%26name%3Dubiistva_po_alfavitu_-_aghata_kristi.pdf%26text%3D%25D1%2583%25D0%25B1%25D0%25B8%25D0%25B9%25D1%2581%25D1%2582%25D0%25B2%25D0%25BE%2B%25D0%25BF%25D0%25BE%2B%25D0%25B0%25D0%25BB%25D1%2584%25D0%25B0%25D0%25B2%25D0%25B8%25D1%2582%25D1%2583%2B%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B0%2B%25D0%25BF%25D0%25B4%25D1%2584%26url%3Dhttps%253A%2F%2Fminizo.kchgov.ru%2Fuploads%2Fubiistva_po_alfavitu_-_aghata_kristi.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Db6bad417d75d18e85b9a381d734ee3ca%26keyno%3D0%26nosw%3D1">Убийства по алфавиту</a>
+        <p>Агата Кристи</p>
+      </div>
+
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/2c/05/0197d412-b597-741c-867d-0c1337d42c05.jpg?width=2976&height=1480&fit=bounds" alt="Хороших девочек не убивают">
+        <a href="file:///C:/Users/natas/AppData/Local/Temp/2175e8b4-2dd8-4668-b0ef-12b845187530_32668-horoshih-devochek-ne-ubivayut.fb2.zip.530/Dzhekson_Horoshih-devochek-ne-ubivayut_1_Horoshih-devochek-ne-ubivayut.El5nUg.646996.fb2">Хороших девочек не убивают</a>
+        <p>Холли Джексон</p>
+      </div>
+
+      <div class="book">
+        <img src="https://cdn.litres.ru/pub/c/cover_415/67838616.webp" alt="Этюд в багровых тонах">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760358661&tld=kz&lang=ru&name=Artur_Konan_Doil_Etyud_v_bagrovyh_tonah.pdf&text=этюд%20в%20багровых%20тонах%20pdf&url=https%3A%2F%2Fsauap.org%2Fwp-content%2Fuploads%2F2016%2F08%2FArtur_Konan_Doil_Etyud_v_bagrovyh_tonah.pdf&lr=29592&mime=pdf&l10n=ru&sign=468d39a468322e00224a8ac8706519d5&keyno=0&nosw=1&serpParams=tm%3D1760358661%26tld%3Dkz%26lang%3Dru%26name%3DArtur_Konan_Doil_Etyud_v_bagrovyh_tonah.pdf%26text%3D%25D1%258D%25D1%2582%25D1%258E%25D0%25B4%2B%25D0%25B2%2B%25D0%25B1%25D0%25B0%25D0%25B3%25D1%2580%25D0%25BE%25D0%25B2%25D1%258B%25D1%2585%2B%25D1%2582%25D0%25BE%25D0%25BD%25D0%25B0%25D1%2585%2Bpdf%26url%3Dhttps%253A%2F%2Fsauap.org%2Fwp-content%2Fuploads%2F2016%2F08%2FArtur_Konan_Doil_Etyud_v_bagrovyh_tonah.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D468d39a468322e00224a8ac8706519d5%26keyno%3D0%26nosw%3D1">Этюд в багровых тонах</a>
+        <p>Артур Конан Дойл</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://cdn1.ozone.ru/s3/multimedia-b/c600/6753346859.jpg" alt="Снеговик">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760358991&tld=kz&lang=ru&name=1516081336-87UDov.pdf&text=снеговик%20ю%20несбе%20pdf&url=http%3A%2F%2Fppmi24.ru%2Fuploads%2FGrantRequest%2F1516081336-87UDov.pdf&lr=29592&mime=pdf&l10n=ru&sign=b2a61d61d1e6d680fb705628254a6911&keyno=0&nosw=1&serpParams=tm%3D1760358991%26tld%3Dkz%26lang%3Dru%26name%3D1516081336-87UDov.pdf%26text%3D%25D1%2581%25D0%25BD%25D0%25B5%25D0%25B3%25D0%25BE%25D0%25B2%25D0%25B8%25D0%25BA%2B%25D1%258E%2B%25D0%25BD%25D0%25B5%25D1%2581%25D0%25B1%25D0%25B5%2Bpdf%26url%3Dhttp%253A%2F%2Fppmi24.ru%2Fuploads%2FGrantRequest%2F1516081336-87UDov.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3Db2a61d61d1e6d680fb705628254a6911%26keyno%3D0%26nosw%3D1">Снеговик</a>
+        <p>Ю Несбё</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/25/e1/0192c210-548a-706b-91f6-3959e01c25e1.jpg?width=2976&height=1480&fit=bounds" alt="Рыбки в пятнах света">
+        <a href="https://psv4.userapi.com/s/v1/d/dORghC1lgqCa5IhOsl6fmgh1S-bYBe5fMzbQW_PXXDKJ5teZoq0SmMgpOsYMaWIOiQi3JI3xS6I6CNTr3y_GHrhS7dabKQqTQHT8dZNjnxBeEDqA/Riku_Onda__Rybki_v_pyatnakh_sveta.fb2">Рыбки в пятнах света</a>
+        <p>Рику Онда</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/b9/6d/018f5e2c-6a3c-7e7e-bd7d-7e7faba4b96d.jpg?width=2976&height=1480&fit=bounds" alt="Ганнибал">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760359508&tld=kz&lang=en&name=hannibal-by-thomas-harris.pdf&text=Ганнибал%20Томас%20Харри%20pdf&url=https%3A%2F%2Fcdn.bookey.app%2Ffiles%2Fpdf%2Fbook%2Fen%2Fhannibal-by-thomas-harris.pdf&lr=29592&mime=pdf&l10n=ru&sign=9876ebb120a7e19efde856fad37a8e62&keyno=0&nosw=1&serpParams=tm%3D1760359508%26tld%3Dkz%26lang%3Den%26name%3Dhannibal-by-thomas-harris.pdf%26text%3D%25D0%2593%25D0%25B0%25D0%25BD%25D0%25BD%25D0%25B8%25D0%25B1%25D0%25B0%25D0%25BB%2B%25D0%25A2%25D0%25BE%25D0%25BC%25D0%25B0%25D1%2581%2B%25D0%25A5%25D0%25B0%25D1%2580%25D1%2580%25D0%25B8%2Bpdf%26url%3Dhttps%253A%2F%2Fcdn.bookey.app%2Ffiles%2Fpdf%2Fbook%2Fen%2Fhannibal-by-thomas-harris.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D9876ebb120a7e19efde856fad37a8e62%26keyno%3D0%26nosw%3D1">Ганнибал</a>
+        <p>Томас Харрис</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/86/83/018fa1b7-34fa-7ff4-b751-773ad3d68683.jpg?width=2976&height=1480&fit=bounds" alt="Кто нашел, берет себе">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760360025&tld=kz&lang=ru&name=Кинг%20С._%20Кто%20нашел%2C%20берет%20себе%20(Мистер%20Мерседес-2).%20Роман.(2015).pdf&text=Кто%20нашел%2C%20берет%20себе%20Стивен%20Кинг%20pdf&url=https%3A%2F%2Fpubl.lib.ru%2FPODVAL%2FRUS%2FK%2F%25CA%25E8%25ED%25E3%2C%2520%25D1%25F2%25E8%25E2%25E5%25ED%2520%25DD%25E4%25E2%25E8%25ED%2520%253B)%2F%25CA%25E8%25ED%25E3%2520%25D1._%2520%25CA%25F2%25EE%2520%25ED%25E0%25F8%25E5%25EB%2C%2520%25E1%25E5%25F0%25E5%25F2%2520%25F1%25E5%25E1%25E5%2520(%25CC%25E8%25F1%25F2%25E5%25F0%2520%25CC%25E5%25F0%25F1%25E5%25E4%25E5%25F1-2).%2520%25D0%25EE%25EC%25E0%25ED.(2015).pdf&lr=29592&mime=pdf&l10n=ru&sign=14edb35ec9a73a272a7bc88823b2d6f8&keyno=0&nosw=1&serpParams=tm%3D1760360025%26tld%3Dkz%26lang%3Dru%26name%3D%25D0%259A%25D0%25B8%25D0%25BD%25D0%25B3%2520%25D0%25A1._%2520%25D0%259A%25D1%2582%25D0%25BE%2520%25D0%25BD%25D0%25B0%25D1%2588%25D0%25B5%25D0%25BB%2C%2520%25D0%25B1%25D0%25B5%25D1%2580%25D0%25B5%25D1%2582%2520%25D1%2581%25D0%25B5%25D0%25B1%25D0%25B5%2520(%25D0%259C%25D0%25B8%25D1%2581%25D1%2582%25D0%25B5%25D1%2580%2520%25D0%259C%25D0%25B5%25D1%2580%25D1%2581%25D0%25B5%25D0%25B4%25D0%25B5%25D1%2581-2).%2520%25D0%25A0%25D0%25BE%25D0%25BC%25D0%25B0%25D0%25BD.(2015).pdf%26text%3D%25D0%259A%25D1%2582%25D0%25BE%2B%25D0%25BD%25D0%25B0%25D1%2588%25D0%25B5%25D0%25BB%252C%2B%25D0%25B1%25D0%25B5%25D1%2580%25D0%25B5%25D1%2582%2B%25D1%2581%25D0%25B5%25D0%25B1%25D0%25B5%2B%25D0%25A1%25D1%2582%25D0%25B8%25D0%25B2%25D0%25B5%25D0%25BD%2B%25D0%259A%25D0%25B8%25D0%25BD%25D0%25B3%2Bpdf%26url%3Dhttps%253A%2F%2Fpubl.lib.ru%2FPODVAL%2FRUS%2FK%2F%2525CA%2525E8%2525ED%2525E3%252C%252520%2525D1%2525F2%2525E8%2525E2%2525E5%2525ED%252520%2525DD%2525E4%2525E2%2525E8%2525ED%252520%25253B%2529%2F%2525CA%2525E8%2525ED%2525E3%252520%2525D1._%252520%2525CA%2525F2%2525EE%252520%2525ED%2525E0%2525F8%2525E5%2525EB%252C%252520%2525E1%2525E5%2525F0%2525E5%2525F2%252520%2525F1%2525E5%2525E1%2525E5%252520%2528%2525CC%2525E8%2525F1%2525F2%2525E5%2525F0%252520%2525CC%2525E5%2525F0%2525F1%2525E5%2525E4%2525E5%2525F1-2%2529.%252520%2525D0%2525EE%2525EC%2525E0%2525ED.%25282015%2529.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D14edb35ec9a73a272a7bc88823b2d6f8%26keyno%3D0%26nosw%3D1">Кто нашел, берет себе</a>
+        <p>Стивен Кинг</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://content.img-gorod.ru/pim/products/images/a6/38/018f6172-4862-7d35-a6d5-76cfb608a638.jpg?width=2976&height=1480&fit=bounds" alt="Падение дома Ашеров">
+        <a href="https://psv4.userapi.com/s/v1/d/eJJwXc7Pz9u08k2NzJorP0z44wv-Ri3IX0Ftfa-m6vaWhhAWIDbgL0vIiEZ5M9PXtIB2MUSdMZnFSNXew2_xJGNbLVLVw5EQak97VMqlmMjb2Oyu/Edgar_Po_Padenie_doma_Asherov_2016.pdf">Падение дома Ашеров</a>
+        <p>Эдгар Аллан По</p>
+      </div>
+     
+      <div class="book">
+        <img src="https://aknig.xyz/uploads/posts/2023-06/3307-ubiistva-na-ulitse-morg-sbornik.webp" alt="Убийство на улице Морг">
+        <a href="https://psv4.userapi.com/s/v1/d/0FGSrwvHN6idIXnHBdpsivD0OHuBqxU3Yswyc0kIFtfX8cOnQ7ryycdpVp9YDH8XHfIMsG3l6UIYjUUaPth64A0URVY36d1LVV6T-6ht2_uBA4ry/Ubiystvo_na_ulitse_Morg.pdf?dl=1">Убийство на улице Морг</a>
+        <p>Эдгар Аллан По</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://avatars.mds.yandex.net/i?id=2365f51d7bf6d2ec9195cd30b944c917_l-10650801-images-thumbs&n=13" alt="Девушка с татуировкой дракона">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760361647&tld=kz&lang=ru&name=devushka-s-tatuirovkoj-drakona-1.pdf&text=Девушка%20с%20татуировкой%20дракона%20Стиг%20Ларссон%20книга%20pdf&url=https%3A%2F%2Fcbs-saran.gov.kz%2Fwp-content%2Fuploads%2F2024%2F01%2Fdevushka-s-tatuirovkoj-drakona-1.pdf&lr=29592&mime=pdf&l10n=ru&sign=e29207330a85ab689fc2c811dfe000ff&keyno=0&nosw=1&serpParams=tm%3D1760361647%26tld%3Dkz%26lang%3Dru%26name%3Ddevushka-s-tatuirovkoj-drakona-1.pdf%26text%3D%25D0%2594%25D0%25B5%25D0%25B2%25D1%2583%25D1%2588%25D0%25BA%25D0%25B0%2B%25D1%2581%2B%25D1%2582%25D0%25B0%25D1%2582%25D1%2583%25D0%25B8%25D1%2580%25D0%25BE%25D0%25B2%25D0%25BA%25D0%25BE%25D0%25B9%2B%25D0%25B4%25D1%2580%25D0%25B0%25D0%25BA%25D0%25BE%25D0%25BD%25D0%25B0%2B%25D0%25A1%25D1%2582%25D0%25B8%25D0%25B3%2B%25D0%259B%25D0%25B0%25D1%2580%25D1%2581%25D1%2581%25D0%25BE%25D0%25BD%2B%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B0%2Bpdf%26url%3Dhttps%253A%2F%2Fcbs-saran.gov.kz%2Fwp-content%2Fuploads%2F2024%2F01%2Fdevushka-s-tatuirovkoj-drakona-1.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3De29207330a85ab689fc2c811dfe000ff%26keyno%3D0%26nosw%3D1">Девушка с татуировкой дракона</a>
+        <p>Стиг Ларссон</p>
+      </div>
+     
+      <div class="book">
+        <img src="https://ts2.mm.bing.net/th?id=OIP.kw00RocT3deYQN754eSbYQHaLu&pid=15.1" alt="Десять негритят">
+        <a href="https://docs.yandex.kz/docs/view?url=ya-disk-public%3A%2F%2Ftx6Vg6eey20Qjy6xW63YpjgOAjg8TGJbfzk0SqdjRZnRHDELRSri0qaBbmrsRolIq%2FJ6bpmRyOJonT3VoXnDag%3D%3D&name=Агата%20Кристи%2C%20Джон%20Болл%20-%20%27%27Десять%20негритят%27%27%20(сборник).pdf">Десять негритят</a>
+        <p>Агата Кристи</p>
+      </div>
+      
+      <div class="book">
+        <img src="https://domknigi.eu/upload/iblock/6aa/6aa29881043c2ffd2b5fea612c85d297.jpg" alt="Большая четверка">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760361951&tld=kz&lang=ru&name=bolshaia_chietvierka_-_aghata_kristi.pdf&text=Большая%20четверка%20Агата%20Кристи%20книга%20pdf&url=https%3A%2F%2Fminizo.kchgov.ru%2Fuploads%2Fbolshaia_chietvierka_-_aghata_kristi.pdf&lr=29592&mime=pdf&l10n=ru&sign=94b0b79179ca949c9487759534a8c96e&keyno=0&nosw=1&serpParams=tm%3D1760361951%26tld%3Dkz%26lang%3Dru%26name%3Dbolshaia_chietvierka_-_aghata_kristi.pdf%26text%3D%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2B%25D1%2587%25D0%25B5%25D1%2582%25D0%25B2%25D0%25B5%25D1%2580%25D0%25BA%25D0%25B0%2B%25D0%2590%25D0%25B3%25D0%25B0%25D1%2582%25D0%25B0%2B%25D0%259A%25D1%2580%25D0%25B8%25D1%2581%25D1%2582%25D0%25B8%2B%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B0%2Bpdf%26url%3Dhttps%253A%2F%2Fminizo.kchgov.ru%2Fuploads%2Fbolshaia_chietvierka_-_aghata_kristi.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D94b0b79179ca949c9487759534a8c96e%26keyno%3D0%26nosw%3D1">Большая четверка</a>
+        <p>Агата Кристи</p>
+      </div>
+    
+      <div class="book">
+        <img src="https://sun9-73.userapi.com/s/v1/ig2/kRuxgSu6E2gWx6iLkS64pYpGopfr-DzqNScwvd9iCOdxask5RGkI13QKtPpB_e5z75QW0Cfsi3_34tH5lWxxIJgd.jpg?quality=95&as=32x51,48x77,72x115,108x172,160x255,240x383,360x574,415x662&from=bu&cs=415x0" alt="Загадка Эндхауза">
+        <a href="https://psv4.userapi.com/s/v1/d/EoeTeEGb4kyFkWme9EAfiw4B0vZJm_qbbG9yPFou027Ri92lWCNYcaTtRLS5YIupRW-qp2CRik913qvMGsJHdpnIxqSwzifGEqcIRjPI8M5uEaqG/Agata_Kristi_Zagadka_Endkhauza.pdf">Загадка Эндхауза</a>
+        <p>Агата Кристи</p>
+      </div>
+    
+      <div class="book">
+        <img src="https://static.onlinetrade.ru/img/items/m/kniga_tokiyskiy_zodiak_simada_s_1605512821_1.jpg" alt="Токийский Зодиак">
+        <a href="https://docs.yandex.kz/docs/view?tm=1760362272&tld=kz&lang=ru&name=tokijskij-zodiak-sodzi-simada.pdf&text=«Токийский%20Зодиак»%2C%20Содзи%20Симада.pdf&url=https%3A%2F%2Fdetective-books.com%2Fwp-content%2Fuploads%2F2024%2F02%2Ftokijskij-zodiak-sodzi-simada.pdf&lr=29592&mime=pdf&l10n=ru&sign=2c7f0540fcc13231787e43db6b65cafa&keyno=0&nosw=1&serpParams=tm%3D1760362272%26tld%3Dkz%26lang%3Dru%26name%3Dtokijskij-zodiak-sodzi-simada.pdf%26text%3D%25C2%25AB%25D0%25A2%25D0%25BE%25D0%25BA%25D0%25B8%25D0%25B9%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2B%25D0%2597%25D0%25BE%25D0%25B4%25D0%25B8%25D0%25B0%25D0%25BA%25C2%25BB%252C%2B%25D0%25A1%25D0%25BE%25D0%25B4%25D0%25B7%25D0%25B8%2B%25D0%25A1%25D0%25B8%25D0%25BC%25D0%25B0%25D0%25B4%25D0%25B0.pdf%26url%3Dhttps%253A%2F%2Fdetective-books.com%2Fwp-content%2Fuploads%2F2024%2F02%2Ftokijskij-zodiak-sodzi-simada.pdf%26lr%3D29592%26mime%3Dpdf%26l10n%3Dru%26sign%3D2c7f0540fcc13231787e43db6b65cafa%26keyno%3D0%26nosw%3D1">Токийский Зодиак</a>
+        <p>Содзи Симада</p>
+      </div>
+    </div>
+ </section>
+
+  <footer>
+    <p>© 2025 Книжный Магазин. Все права защищены.</p>
+  </footer>
+</body>
+</html>
+  
